@@ -1,10 +1,16 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import MenuSection from '../components/MenuSection';
 import { getMenuByCategories } from '../data/menu';
 
 const MenuPage = () => {
   const navigate = useNavigate();
+
+  // Scroll vers le haut au chargement de la page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="MenuPage bg-black min-h-screen">

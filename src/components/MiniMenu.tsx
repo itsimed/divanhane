@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getMenuByCategories } from '../data/menu';
 import type { Dish } from '../types/restaurant';
 
 const MiniMenu = () => {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dishes, setDishes] = useState<Dish[]>([]);
 
@@ -171,7 +173,7 @@ const MiniMenu = () => {
                        <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.location.href = '/menu'}
+              onClick={() => navigate('/menu')}
               className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-4 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg lg:text-xl"
             >
               Voir le menu complet
