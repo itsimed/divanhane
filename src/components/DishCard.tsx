@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import type { Dish } from '../types/restaurant';
+import { formatPrice } from '../lib/formatPrice';
 
 interface DishCardProps {
   dish: Dish;
@@ -52,7 +53,7 @@ const DishCard: React.FC<DishCardProps> = ({ dish, index }) => {
       {/* Prix */}
       <div className="flex justify-between items-center">
         <span className="text-2xl font-oriental text-turkish-gold font-bold">
-          {dish.price}
+          {formatPrice(dish.price)}
         </span>
         
         {/* Bouton commander */}

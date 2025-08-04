@@ -5,16 +5,16 @@ export const restaurantInfo: RestaurantInfo = {
   slogan: "L'art de la cuisine turque",
   description: "Découvrez l'authenticité de la gastronomie turque dans un cadre élégant et chaleureux.",
   contact: {
-    address: "123 Rue de la Paix, 75001 Paris",
-    phone: "+33 1 42 86 17 23",
-    email: "contact@divanhane.fr",
+    address: "GASSIOT en face consulat Tunisie - Annaba",
+    phone: "+213561806083",
+    email: "contact@divanhane.com",
     hours: {
       "Lundi - Vendredi": "12:00 - 14:30, 19:00 - 23:00",
       "Samedi - Dimanche": "12:00 - 15:00, 19:00 - 23:30"
     },
     socialMedia: {
       facebook: "https://facebook.com/divanhane",
-      instagram: "https://instagram.com/divanhane",
+      instagram: "https://www.instagram.com/divan_hane23",
       twitter: "https://twitter.com/divanhane",
       tiktok: "https://tiktok.com/@divanhane"
     }

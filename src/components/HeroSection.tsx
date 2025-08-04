@@ -97,7 +97,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onMenuClick }) => {
           onClick={onMenuClick}
           className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental text-lg px-8 py-4 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-turkish-gold/30 hover:border-turkish-gold"
         >
-          Voir le Menu
+          Découvrir nos plats
         </motion.button>
         
         

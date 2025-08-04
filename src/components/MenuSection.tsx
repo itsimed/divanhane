@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { MenuCategory, Dish } from '../types/restaurant';
+import { formatPrice } from '../lib/formatPrice';
 
 interface MenuSectionProps {
   menuData: MenuCategory[];
@@ -146,7 +147,7 @@ const DishRow: React.FC<DishRowProps> = ({ dish, index, isAlternate }) => {
                  {dish.name}
                </h3>
                <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-oriental text-turkish-gold font-bold">
-                 {dish.price}
+                 {formatPrice(dish.price)}
                </span>
              </div>
            
