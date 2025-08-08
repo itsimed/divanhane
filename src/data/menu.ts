@@ -215,7 +215,7 @@ export const menuData: MenuCategory[] = [
         description: "Kebab épicé d'Adana à base de viande hachée grillée.",
         price: 2200,
         category: "Kebabs",
-        image: "https://storage.googleapis.com/divanhane/20.webp",
+        image: "https://storage.googleapis.com/divanhane/adana.webp",
         isSpicy: true
       },
       {
