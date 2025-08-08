@@ -251,33 +251,33 @@ export const menuData: MenuCategory[] = [
         id: "traditional-1",
         name: "Sac Tava",
         description: "Viande et légumes sautés dans une poêle en fonte.",
-        price: 1700,
-        category: "Plats Traditionnels",
-        image: "https://storage.googleapis.com/divanhane/24.webp"
-      },
-      {
-        id: "traditional-2",
-        name: "Çömlek Güveç",
-        description: "Ragoût de viande et légumes mijoté dans une cocotte en terre.",
         price: 2500,
         category: "Plats Traditionnels",
         image: "https://storage.googleapis.com/divanhane/25.webp"
       },
       {
-        id: "traditional-3",
-        name: "Kaburga Dolması",
-        description: "Côtes d'agneau farcies de riz et rôties au four.",
+        id: "traditional-2",
+        name: "Çömlek Güveç",
+        description: "Ragoût de viande et légumes mijoté dans une cocotte en terre.",
         price: 1900,
         category: "Plats Traditionnels",
         image: "https://storage.googleapis.com/divanhane/26.webp"
       },
       {
-        id: "traditional-4",
-        name: "Tavuk Tava",
-        description: "Poêlée de poulet mijotée aux légumes.",
+        id: "traditional-3",
+        name: "Kaburga Dolması",
+        description: "Côtes d'agneau farcies de riz et rôties au four.",
         price: 6500,
         category: "Plats Traditionnels",
         image: "https://storage.googleapis.com/divanhane/27.webp"
+      },
+      {
+        id: "traditional-4",
+        name: "Tavuk Tava",
+        description: "Poêlée de poulet mijotée aux légumes.",
+        price: 1700,
+        category: "Plats Traditionnels",
+        image: "https://storage.googleapis.com/divanhane/24.webp"
       }
     ]
   },

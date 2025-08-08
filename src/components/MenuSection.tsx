@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
+import { restaurantInfo } from '../data/menu';
 import { useNavigate } from 'react-router-dom';
 import type { MenuCategory, Dish } from '../types/restaurant';
 import { formatPrice } from '../lib/formatPrice';
@@ -84,13 +85,14 @@ const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ menuData }, ref
               <p className="text-sm sm:text-base text-turkish-cream/80 mb-4 sm:mb-6">
                 Réservez votre table pour une expérience culinaire inoubliable
               </p>
-              <motion.button
+              <motion.a
+                href={`tel:${restaurantInfo.contact.phone}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                className="inline-block bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base"
               >
                 Réserver maintenant
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
 

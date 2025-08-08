@@ -46,10 +46,17 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                    </svg>
                  </div>
-                 <div>
-                   <h3 className="text-xl font-oriental text-turkish-gold mb-2">Adresse</h3>
-                   <p className="text-turkish-cream/80 leading-relaxed">{contact.address}</p>
-                 </div>
+                  <div>
+                    <h3 className="text-xl font-oriental text-turkish-gold mb-2">Adresse</h3>
+                    <a
+                      href="https://maps.app.goo.gl/wm6Rv3Q2eXdUyDt3A"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-turkish-cream/80 hover:text-turkish-gold transition-colors duration-300 leading-relaxed"
+                    >
+                      {contact.address}
+                    </a>
+                  </div>
                </div>
              </div>
              
@@ -149,13 +156,14 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
               <p className="text-turkish-cream/80 mb-4">
                 Réservez votre table en ligne ou par téléphone
               </p>
-              <motion.button
+              <motion.a
+                href={`tel:${contact.phone}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-block bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Réserver maintenant
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
