@@ -4,7 +4,7 @@ export interface Dish {
   description: string;
   price: number;
   category: string;
-  image: string;
+  image?: string;
   isSpicy?: boolean;
   isVegetarian?: boolean;
 }

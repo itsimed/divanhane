@@ -27,8 +27,6 @@ const MiniMenu = () => {
     );
   };
 
-
-
   // Auto-play du carrousel
   useEffect(() => {
     const interval = setInterval(() => {
@@ -41,52 +39,53 @@ const MiniMenu = () => {
   if (dishes.length === 0) return null;
 
   return (
-         <section className="bg-black pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-20 relative overflow-hidden">
-       {/* Motif oriental en arrière-plan */}
-       <div className="absolute inset-0 bg-oriental-pattern opacity-3"></div>
-       
-       <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-         {/* En-tête de section */}
-         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.6 }}
-           viewport={{ once: true, margin: "-50px" }}
-           className="text-center mb-8 sm:mb-10 lg:mb-12"
-         >
-                       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-oriental text-turkish-gold mb-3 sm:mb-6">
-              Un petit tour en cuisine
-            </h2>
-                       <p className="text-sm sm:text-base lg:text-xl text-turkish-cream/80 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4">
-              Découvrez nos spécialités en un coup d'œil
-            </p>
-         </motion.div>
+    <section className="bg-black pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-20 relative overflow-hidden">
+      {/* Motif oriental en arrière-plan */}
+      <div className="absolute inset-0 bg-oriental-pattern opacity-3"></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        {/* En-tête de section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-50px" }}
+          className="text-center mb-8 sm:mb-10 lg:mb-12"
+        >
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-oriental text-turkish-gold mb-3 sm:mb-6">
+            Un petit tour en cuisine
+          </h2>
+          <p className="text-sm sm:text-base lg:text-xl text-turkish-cream/80 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4">
+            Découvrez nos spécialités en un coup d'œil
+          </p>
+        </motion.div>
 
-                 {/* Carrousel */}
-         <div className="relative">
-           {/* Conteneur du carrousel */}
-           <div className="overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
-             <div 
-               className="flex transition-transform duration-700 ease-in-out"
-               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-             >
-               {dishes.map((dish) => (
-                 <div
-                   key={dish.id}
-                   className="w-full flex-shrink-0 relative"
-                 >
-                                       {/* Image du plat */}
+        {/* Carrousel */}
+        <div className="relative">
+          {/* Conteneur du carrousel */}
+          <div className="overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
+            <div 
+              className="flex transition-transform duration-700 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {dishes.map((dish) => (
+                <div
+                  key={dish.id}
+                  className="w-full flex-shrink-0 relative"
+                >
+                  {/* Image du plat - seulement si elle existe */}
+                  {dish.image ? (
                     <div className="relative w-full h-56 sm:h-64 md:h-80 lg:h-96 xl:h-[500px]">
-                     <img
-                       src={dish.image}
-                       alt={dish.name}
-                       className="w-full h-full object-cover"
-                     />
-                     
-                     {/* Overlay gradient */}
-                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                     
-                                           {/* Nom du plat */}
+                      <img
+                        src={dish.image}
+                        alt={dish.name}
+                        className="w-full h-full object-cover"
+                      />
+                      
+                      {/* Overlay gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                      
+                      {/* Nom du plat */}
                       <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 md:p-8">
                         <motion.h3
                           key={`${dish.id}-${currentIndex}`}
@@ -116,69 +115,81 @@ const MiniMenu = () => {
                           {dish.name}
                         </motion.h3>
                       </div>
-                   </div>
-                 </div>
-               ))}
-             </div>
-           </div>
-
-                       {/* Boutons de navigation - en dehors du carrousel */}
-            <div className="flex justify-center items-center gap-3 sm:gap-4 mt-3 sm:mt-6">
-              <button
-                onClick={prevSlide}
-                className="bg-black/70 text-white w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center border-2 border-turkish-gold select-none transform-none hover:bg-black/90 active:scale-95 sm:hover:scale-105 hover:shadow-lg hover:shadow-turkish-gold/25 transition-all duration-300 relative group"
-                aria-label="Plat précédent"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-                </svg>
-                {/* Point décoratif mobile */}
-                <div className="absolute w-1 h-1 bg-turkish-gold/60 rounded-full sm:hidden"></div>
-                {/* Effet de brillance */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                {/* Bordure animée */}
-                <div className="absolute inset-0 rounded-full border-2 border-turkish-gold/30 group-hover:border-turkish-gold/60 transition-all duration-300"></div>
-                {/* Effet de pression mobile */}
-                <div className="absolute inset-0 rounded-full bg-white/5 opacity-0 active:opacity-100 transition-opacity duration-150 sm:hidden"></div>
-              </button>
-
-              <button
-                onClick={nextSlide}
-                className="bg-black/70 text-white w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center border-2 border-turkish-gold select-none transform-none hover:bg-black/90 active:scale-95 sm:hover:scale-105 hover:shadow-lg hover:shadow-turkish-gold/25 transition-all duration-300 relative group"
-                aria-label="Plat suivant"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                </svg>
-                {/* Point décoratif mobile */}
-                <div className="absolute w-1 h-1 bg-turkish-gold/60 rounded-full sm:hidden"></div>
-                {/* Effet de brillance */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                {/* Bordure animée */}
-                <div className="absolute inset-0 rounded-full border-2 border-turkish-gold/30 group-hover:border-turkish-gold/60 transition-all duration-300"></div>
-                {/* Effet de pression mobile */}
-                <div className="absolute inset-0 rounded-full bg-white/5 opacity-0 active:opacity-100 transition-opacity duration-150 sm:hidden"></div>
-              </button>
+                    </div>
+                  ) : (
+                    <div className="relative w-full h-56 sm:h-64 md:h-80 lg:h-96 xl:h-[500px] bg-gradient-to-br from-turkish-blue/20 to-black/80 flex items-center justify-center">
+                      <div className="text-center">
+                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-oriental text-turkish-gold font-bold">
+                          {dish.name}
+                        </h3>
+                        <p className="text-turkish-cream/80 text-sm sm:text-base md:text-lg mt-2">
+                          {dish.description}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
-         </div>
+          </div>
 
-                 {/* Call to action */}
-         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.6, delay: 0.3 }}
-           viewport={{ once: true, margin: "-50px" }}
-           className="text-center mt-8 sm:mt-10 lg:mt-12"
-         >
-                       <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => navigate('/menu')}
-              className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-4 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg lg:text-xl"
+          {/* Boutons de navigation - en dehors du carrousel */}
+          <div className="flex justify-center items-center gap-3 sm:gap-4 mt-3 sm:mt-6">
+            <button
+              onClick={prevSlide}
+              className="bg-black/70 text-white w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center border-2 border-turkish-gold select-none transform-none hover:bg-black/90 active:scale-95 sm:hover:scale-105 hover:shadow-lg hover:shadow-turkish-gold/25 transition-all duration-300 relative group"
+              aria-label="Plat précédent"
             >
-              Voir le menu complet
-            </motion.button>
-         </motion.div>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+              </svg>
+              {/* Point décoratif mobile */}
+              <div className="absolute w-1 h-1 bg-turkish-gold/60 rounded-full sm:hidden"></div>
+              {/* Effet de brillance */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* Bordure animée */}
+              <div className="absolute inset-0 rounded-full border-2 border-turkish-gold/30 group-hover:border-turkish-gold/60 transition-all duration-300"></div>
+              {/* Effet de pression mobile */}
+              <div className="absolute inset-0 rounded-full bg-white/5 opacity-0 active:opacity-100 transition-opacity duration-150 sm:hidden"></div>
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className="bg-black/70 text-white w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center border-2 border-turkish-gold select-none transform-none hover:bg-black/90 active:scale-95 sm:hover:scale-105 hover:shadow-lg hover:shadow-turkish-gold/25 transition-all duration-300 relative group"
+              aria-label="Plat suivant"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+              </svg>
+              {/* Point décoratif mobile */}
+              <div className="absolute w-1 h-1 bg-turkish-gold/60 rounded-full sm:hidden"></div>
+              {/* Effet de brillance */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* Bordure animée */}
+              <div className="absolute inset-0 rounded-full border-2 border-turkish-gold/30 group-hover:border-turkish-gold/60 transition-all duration-300"></div>
+              {/* Effet de pression mobile */}
+              <div className="absolute inset-0 rounded-full bg-white/5 opacity-0 active:opacity-100 transition-opacity duration-150 sm:hidden"></div>
+            </button>
+          </div>
+        </div>
+
+        {/* Call to action */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true, margin: "-50px" }}
+          className="text-center mt-8 sm:mt-10 lg:mt-12"
+        >
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate('/menu')}
+            className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-4 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg lg:text-xl"
+          >
+            Voir le menu complet
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

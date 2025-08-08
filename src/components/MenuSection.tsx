@@ -157,14 +157,16 @@ const DishRow: React.FC<DishRowProps> = ({ dish, index, isAlternate }) => {
              </p>
          </div>
         
-                                                       {/* Image du plat */}
-                                                                                               <div className="w-32 sm:w-48 md:w-64 lg:w-56 xl:w-72 h-24 sm:h-36 md:h-48 lg:h-40 xl:h-56 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden flex-shrink-0">
-           <img 
-             src={dish.image} 
-             alt={dish.name}
-             className="w-full h-full object-cover rounded-xl sm:rounded-2xl lg:rounded-3xl"
-           />
-         </div>
+                                                       {/* Image du plat - seulement si elle existe */}
+                                                                                               {dish.image && (
+                                                                                                 <div className="w-32 sm:w-48 md:w-64 lg:w-56 xl:w-72 h-24 sm:h-36 md:h-48 lg:h-40 xl:h-56 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden flex-shrink-0">
+                                                                                                   <img 
+                                                                                                     src={dish.image} 
+                                                                                                     alt={dish.name}
+                                                                                                     className="w-full h-full object-cover rounded-xl sm:rounded-2xl lg:rounded-3xl"
+                                                                                                   />
+                                                                                                 </div>
+                                                                                               )}
       </div>
       
       

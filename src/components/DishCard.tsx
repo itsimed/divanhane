@@ -17,14 +17,16 @@ const DishCard: React.FC<DishCardProps> = ({ dish, index }) => {
       whileHover={{ y: -8, scale: 1.02 }}
       className="bg-gradient-to-br from-turkish-blue/20 to-black/80 backdrop-blur-sm border border-turkish-gold/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 group"
     >
-      {/* Image du plat */}
-      <div className="w-full h-48 rounded-xl mb-4 overflow-hidden">
-        <img 
-          src={dish.image} 
-          alt={dish.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
+      {/* Image du plat - seulement si elle existe */}
+      {dish.image && (
+        <div className="w-full h-48 rounded-xl mb-4 overflow-hidden">
+          <img 
+            src={dish.image} 
+            alt={dish.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      )}
       
       {/* Badges */}
       <div className="flex gap-2 mb-3">
