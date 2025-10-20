@@ -26,7 +26,7 @@ const MenuPage = () => {
           className="cursor-pointer"
         >
           <img 
-            src="https://storage.googleapis.com/divanhane/logo%20divan.webp" 
+            src="https://storage.googleapis.com/publicasse/divan%20hane/logo%20divan.webp" 
             alt="Divan Hane Logo" 
             className="h-20 w-auto"
           />

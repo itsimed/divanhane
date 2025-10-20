@@ -31,7 +31,7 @@ export const menuData: MenuCategory[] = [
         description: "Petit déjeuner turc pour deux, avec fromages, olives, confitures, œufs, légumes, pâtisseries et thé.",
         price: 2200,
         category: "Petit-déjeuner",
-        image: "https://storage.googleapis.com/divanhane/1.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/1.webp"
       },
       {
         id: "breakfast-2",
@@ -39,7 +39,7 @@ export const menuData: MenuCategory[] = [
         description: "Assiette individuelle du petit déjeuner turc, complète et équilibrée.",
         price: 1200,
         category: "Petit-déjeuner",
-        image: "https://storage.googleapis.com/divanhane/2.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/2.webp"
       }
     ]
   },
@@ -52,7 +52,7 @@ export const menuData: MenuCategory[] = [
         description: "Soupe de lentilles rouges, veloutée et légèrement épicée.",
         price: 500,
         category: "Soupes",
-        image: "https://storage.googleapis.com/divanhane/3.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/3.webp"
       },
       {
         id: "soup-2",
@@ -60,7 +60,7 @@ export const menuData: MenuCategory[] = [
         description: "Bouillon chaud de poulet avec morceaux tendres et vermicelles.",
         price: 500,
         category: "Soupes",
-        image: "https://storage.googleapis.com/divanhane/4.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/4.webp"
       }
     ]
   },
@@ -73,7 +73,7 @@ export const menuData: MenuCategory[] = [
         description: "Salade fraîche avec tomates, concombres, oignons, persil et huile d'olive.",
         price: 500,
         category: "Salades & Pâtes",
-        image: "https://storage.googleapis.com/divanhane/5.webp",
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/5.webp",
         isVegetarian: true
       },
       {
@@ -82,7 +82,7 @@ export const menuData: MenuCategory[] = [
         description: "Salade de légumes nappée de fromage kaşar fondu.",
         price: 500,
         category: "Salades & Pâtes",
-        image: "https://storage.googleapis.com/divanhane/6.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/6.webp"
       },
       {
         id: "salad-3",
@@ -90,7 +90,7 @@ export const menuData: MenuCategory[] = [
         description: "Salade César au poulet grillé, croûtons, parmesan et sauce classique.",
         price: 800,
         category: "Salades & Pâtes",
-        image: "https://storage.googleapis.com/divanhane/7.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/7.webp"
       },
       {
         id: "pasta-1",
@@ -98,7 +98,7 @@ export const menuData: MenuCategory[] = [
         description: "Pâtes servies avec une sauce crémeuse douce et onctueuse.",
         price: 1000,
         category: "Salades & Pâtes",
-        image: "https://storage.googleapis.com/divanhane/8.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/8.webp"
       }
     ]
   },
@@ -111,7 +111,7 @@ export const menuData: MenuCategory[] = [
         description: "Pizza turque fine garnie de viande hachée épicée, tomates et oignons.",
         price: 600,
         category: "Pizzas Turques",
-        image: "https://storage.googleapis.com/divanhane/9.webp",
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/9.webp",
         isSpicy: true
       },
       {
@@ -120,7 +120,7 @@ export const menuData: MenuCategory[] = [
         description: "Pide au fromage kaşar fondu, cuit au four.",
         price: 900,
         category: "Pizzas Turques",
-        image: "https://storage.googleapis.com/divanhane/10.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/10.webp"
       },
       {
         id: "pizza-3",
@@ -128,7 +128,7 @@ export const menuData: MenuCategory[] = [
         description: "Pide mixte avec viandes, légumes et fromage.",
         price: 1200,
         category: "Pizzas Turques",
-        image: "https://storage.googleapis.com/divanhane/11.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/11.webp"
       }
     ]
   },
@@ -141,7 +141,7 @@ export const menuData: MenuCategory[] = [
         description: "Viande döner servie sur un lit de riz pilaf parfumé.",
         price: 2250,
         category: "Grillades Viande Rouge",
-        image: "https://storage.googleapis.com/divanhane/12.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/12.webp"
       },
       {
         id: "red-meat-2",
@@ -149,7 +149,7 @@ export const menuData: MenuCategory[] = [
         description: "Döner sur pain pita avec sauce tomate, beurre fondu et yaourt.",
         price: 2250,
         category: "Grillades Viande Rouge",
-        image: "https://storage.googleapis.com/divanhane/13.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/13.webp"
       },
       {
         id: "red-meat-3",
@@ -157,7 +157,7 @@ export const menuData: MenuCategory[] = [
         description: "Côtes d'agneau grillées, marinées et cuites au charbon.",
         price: 2800,
         category: "Grillades Viande Rouge",
-        image: "https://storage.googleapis.com/divanhane/14.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/14.webp"
       },
       {
         id: "red-meat-4",
@@ -165,7 +165,7 @@ export const menuData: MenuCategory[] = [
         description: "Brochettes d'agneau marinées et grillées.",
         price: 2000,
         category: "Grillades Viande Rouge",
-        image: "https://storage.googleapis.com/divanhane/15.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/15.webp"
       }
     ]
   },
@@ -178,7 +178,7 @@ export const menuData: MenuCategory[] = [
         description: "Entrecôte de bœuf grillée à la braise.",
         price: 1800,
         category: "Grillades de Volaille",
-        image: "https://storage.googleapis.com/divanhane/16.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/16.webp"
       },
       {
         id: "poultry-2",
@@ -186,7 +186,7 @@ export const menuData: MenuCategory[] = [
         description: "Brochettes de poulet marinées, tendres et juteuses.",
         price: 1500,
         category: "Grillades de Volaille",
-        image: "https://storage.googleapis.com/divanhane/17.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/17.webp"
       },
       {
         id: "poultry-3",
@@ -194,7 +194,7 @@ export const menuData: MenuCategory[] = [
         description: "Côtelettes de poulet désossées et grillées.",
         price: 1500,
         category: "Grillades de Volaille",
-        image: "https://storage.googleapis.com/divanhane/18.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/18.webp"
       },
       {
         id: "poultry-4",
@@ -202,7 +202,7 @@ export const menuData: MenuCategory[] = [
         description: "Ailes de poulet grillées et épicées.",
         price: 1500,
         category: "Grillades de Volaille",
-        image: "https://storage.googleapis.com/divanhane/19.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/19.webp"
       }
     ]
   },
@@ -215,7 +215,7 @@ export const menuData: MenuCategory[] = [
         description: "Kebab épicé d'Adana à base de viande hachée grillée.",
         price: 2200,
         category: "Kebabs",
-        image: "https://storage.googleapis.com/divanhane/adana.webp",
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/adana.webp",
         isSpicy: true
       },
       {
@@ -224,7 +224,7 @@ export const menuData: MenuCategory[] = [
         description: "Kebab servi sur purée d'aubergines fumées (baba ghanoush).",
         price: 2000,
         category: "Kebabs",
-        image: "https://storage.googleapis.com/divanhane/21.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/21.webp"
       },
       {
         id: "kebab-3",
@@ -232,7 +232,7 @@ export const menuData: MenuCategory[] = [
         description: "Kebab roulé dans lavash avec sauce tomate et yaourt.",
         price: 1800,
         category: "Kebabs",
-        image: "https://storage.googleapis.com/divanhane/22.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/22.webp"
       },
       {
         id: "kebab-4",
@@ -240,7 +240,7 @@ export const menuData: MenuCategory[] = [
         description: "Kebab d'aubergine et de viande en brochette.",
         price: 1900,
         category: "Kebabs",
-        image: "https://storage.googleapis.com/divanhane/23.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/23.webp"
       }
     ]
   },
@@ -253,7 +253,7 @@ export const menuData: MenuCategory[] = [
         description: "Viande et légumes sautés dans une poêle en fonte.",
         price: 2500,
         category: "Plats Traditionnels",
-        image: "https://storage.googleapis.com/divanhane/25.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/25.webp"
       },
       {
         id: "traditional-2",
@@ -261,7 +261,7 @@ export const menuData: MenuCategory[] = [
         description: "Ragoût de viande et légumes mijoté dans une cocotte en terre.",
         price: 1900,
         category: "Plats Traditionnels",
-        image: "https://storage.googleapis.com/divanhane/26.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/26.webp"
       },
       {
         id: "traditional-3",
@@ -269,7 +269,7 @@ export const menuData: MenuCategory[] = [
         description: "Côtes d'agneau farcies de riz et rôties au four.",
         price: 6500,
         category: "Plats Traditionnels",
-        image: "https://storage.googleapis.com/divanhane/27.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/27.webp"
       },
       {
         id: "traditional-4",
@@ -277,7 +277,7 @@ export const menuData: MenuCategory[] = [
         description: "Poêlée de poulet mijotée aux légumes.",
         price: 1700,
         category: "Plats Traditionnels",
-        image: "https://storage.googleapis.com/divanhane/24.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/24.webp"
       }
     ]
   },
@@ -290,7 +290,7 @@ export const menuData: MenuCategory[] = [
         description: "Mélange royal de kebabs d’agneau, poulet et bœuf, avec légumes grillés et riz pilaf.",
         price: 5800,
         category: "Plats Spéciaux",
-        image: "https://storage.googleapis.com/divanhane/KARISLIK.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/KARISLIK.webp"
       },
       {
         id: "special-2",
@@ -298,7 +298,7 @@ export const menuData: MenuCategory[] = [
         description: "Jarret d'agneau mijoté au four avec légumes.",
         price: 5800,
         category: "Plats Spéciaux",
-        image: "https://storage.googleapis.com/divanhane/28.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/28.webp"
       },
       {
         id: "special-3",
@@ -306,7 +306,7 @@ export const menuData: MenuCategory[] = [
         description: "Döner roulé dans lavash avec crudités.",
         price: 1000,
         category: "Plats Spéciaux",
-        image: "https://storage.googleapis.com/divanhane/29.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/29.webp"
       },
       {
         id: "special-4",
@@ -314,7 +314,7 @@ export const menuData: MenuCategory[] = [
         description: "Brochettes de foie d'agneau mariné et grillé.",
         price: 3000,
         category: "Plats Spéciaux",
-        image: "https://storage.googleapis.com/divanhane/30.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/30.webp"
       },
       {
         id: "special-5",
@@ -322,7 +322,7 @@ export const menuData: MenuCategory[] = [
         description: "Wrap de poulet grillé, crudités et sauce dans lavash.",
         price: 600,
         category: "Plats Spéciaux",
-        image: "https://storage.googleapis.com/divanhane/31.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/31.webp"
       }
     ]
   },
@@ -335,7 +335,7 @@ export const menuData: MenuCategory[] = [
         description: "Pâtisserie à la pâte filo, pistaches et sirop.",
         price: 600,
         category: "Desserts",
-        image: "https://storage.googleapis.com/divanhane/32.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/32.webp"
       },
       {
         id: "dessert-2",
@@ -343,7 +343,7 @@ export const menuData: MenuCategory[] = [
         description: "Dessert chaud au fromage et cheveux d'ange, nappé de sirop.",
         price: 700,
         category: "Desserts",
-        image: "https://storage.googleapis.com/divanhane/33.webp"
+        image: "https://storage.googleapis.com/publicasse/divan%20hane/33.webp"
       }
     ]
   },

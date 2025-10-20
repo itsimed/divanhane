@@ -11,7 +11,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onMenuClick }) => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
         style={{
-          backgroundImage: `url('https://storage.googleapis.com/divanhane/hero%C3%A0.webp')`
+          backgroundImage: `url('https://storage.googleapis.com/publicasse/divan%20hane/hero%C3%A0.webp')`
         }}
       ></div>
       
@@ -19,7 +19,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onMenuClick }) => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
-          backgroundImage: `url('https://storage.googleapis.com/divanhane/heromobile.webp')`
+          backgroundImage: `url('https://storage.googleapis.com/publicasse/divan%20hane/heromobile.webp')`
         }}
       ></div>
       
@@ -48,7 +48,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onMenuClick }) => {
                                className="mx-auto mb-6 flex items-center justify-center"
              >
                <img 
-                 src="https://storage.googleapis.com/divanhane/logo%20divan.webp" 
+                 src="https://storage.googleapis.com/publicasse/divan%20hane/logo%20divan.webp" 
                  alt="Divan Hane Logo" 
                  className="h-32 w-auto"
                />
