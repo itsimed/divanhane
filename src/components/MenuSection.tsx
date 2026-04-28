@@ -29,7 +29,7 @@ const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ menuData }, ref
         
                  {/* Menu par catégories */}
          <div className="space-y-8 sm:space-y-12 lg:space-y-20">
-          {menuData.map((category, categoryIndex) => (
+          {menuData.map((category) => (
                          <div
                key={category.name}
                className="relative"
@@ -48,7 +48,6 @@ const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ menuData }, ref
                   <DishRow
                     key={dish.id}
                     dish={dish}
-                    index={dishIndex}
                     isAlternate={dishIndex % 2 === 1}
                   />
                 ))}
@@ -103,11 +102,10 @@ const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ menuData }, ref
 // Composant pour afficher un plat en ligne
 interface DishRowProps {
   dish: Dish;
-  index: number;
   isAlternate: boolean;
 }
 
-const DishRow: React.FC<DishRowProps> = ({ dish, index, isAlternate }) => {
+const DishRow: React.FC<DishRowProps> = ({ dish, isAlternate }) => {
   return (
                    <div
                 className="p-1 sm:p-2 group"
