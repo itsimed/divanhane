@@ -44,23 +44,45 @@ export const menuData: MenuCategory[] = [
     ]
   },
   {
-    name: "Soupes",
+    name: "Entrées Chaudes",
     dishes: [
       {
         id: "soup-1",
         name: "Mercimek Çorbası",
         description: "Soupe de lentilles rouges, veloutée et légèrement épicée.",
         price: 500,
-        category: "Soupes",
+        category: "Entrées Chaudes",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/3.webp"
       },
       {
         id: "soup-2",
-        name: "Tavuk Çorbası",
-        description: "Bouillon chaud de poulet avec morceaux tendres et vermicelles.",
+        name: "Potage de légumes",
+        price: 700,
+        category: "Entrées Chaudes"
+      },
+      {
+        id: "soup-3",
+        name: "Soupe de poisson",
+        price: 1100,
+        category: "Entrées Chaudes"
+      },
+      {
+        id: "appetizer-1",
+        name: "Omelette nature",
         price: 500,
-        category: "Soupes",
-        image: "https://storage.googleapis.com/publicasse/divan%20hane/4.webp"
+        category: "Entrées Chaudes"
+      },
+      {
+        id: "appetizer-2",
+        name: "Omelette fromage",
+        price: 700,
+        category: "Entrées Chaudes"
+      },
+      {
+        id: "appetizer-3",
+        name: "Omelette fines herbes",
+        price: 600,
+        category: "Entrées Chaudes"
       }
     ]
   },
@@ -88,9 +110,27 @@ export const menuData: MenuCategory[] = [
         id: "salad-3",
         name: "Sezar Salata",
         description: "Salade César au poulet grillé, croûtons, parmesan et sauce classique.",
-        price: 800,
+        price: 1200,
         category: "Salades & Pâtes",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/7.webp"
+      },
+      {
+        id: "salad-4",
+        name: "Salade de féta",
+        price: 1200,
+        category: "Salades & Pâtes"
+      },
+      {
+        id: "salad-5",
+        name: "Salade tomate mozzarella",
+        price: 1100,
+        category: "Salades & Pâtes"
+      },
+      {
+        id: "salad-6",
+        name: "Salade burrata",
+        price: 1500,
+        category: "Salades & Pâtes"
       },
       {
         id: "pasta-1",
@@ -133,6 +173,64 @@ export const menuData: MenuCategory[] = [
     ]
   },
   {
+    name: "Viandes Grillées",
+    dishes: [
+      {
+        id: "meat-1",
+        name: "Filet de bœuf",
+        price: 3200,
+        category: "Viandes Grillées"
+      },
+      {
+        id: "meat-2",
+        name: "Entrecôte grillée",
+        price: 2900,
+        category: "Viandes Grillées"
+      },
+      {
+        id: "meat-3",
+        name: "Steak de bœuf",
+        price: 2300,
+        category: "Viandes Grillées"
+      }
+    ]
+  },
+  {
+    name: "Sauces",
+    dishes: [
+      {
+        id: "sauce-1",
+        name: "Sauce poivre",
+        price: 600,
+        category: "Sauces"
+      },
+      {
+        id: "sauce-2",
+        name: "Sauce bordelaise",
+        price: 600,
+        category: "Sauces"
+      },
+      {
+        id: "sauce-3",
+        name: "Sauce piquant",
+        price: 600,
+        category: "Sauces"
+      },
+      {
+        id: "sauce-4",
+        name: "Sauce roquefort",
+        price: 800,
+        category: "Sauces"
+      },
+      {
+        id: "sauce-5",
+        name: "Sauce champignons",
+        price: 600,
+        category: "Sauces"
+      }
+    ]
+  },
+  {
     name: "Grillades Viande Rouge",
     dishes: [
       {
@@ -170,39 +268,81 @@ export const menuData: MenuCategory[] = [
     ]
   },
   {
-    name: "Grillades de Volaille",
+    name: "Plats de Poulet",
     dishes: [
       {
-        id: "poultry-1",
+        id: "poultry-old-1",
         name: "Antrikot Izgara",
         description: "Entrecôte de bœuf grillée à la braise.",
         price: 1800,
-        category: "Grillades de Volaille",
+        category: "Plats de Poulet",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/16.webp"
       },
       {
-        id: "poultry-2",
+        id: "poultry-old-2",
         name: "Tavuk Şiş",
         description: "Brochettes de poulet marinées, tendres et juteuses.",
         price: 1500,
-        category: "Grillades de Volaille",
+        category: "Plats de Poulet",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/17.webp"
       },
       {
-        id: "poultry-3",
+        id: "poultry-old-3",
         name: "Pirzola Tavuk",
         description: "Côtelettes de poulet désossées et grillées.",
         price: 1500,
-        category: "Grillades de Volaille",
+        category: "Plats de Poulet",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/18.webp"
       },
       {
-        id: "poultry-4",
+        id: "poultry-old-4",
         name: "Kanat Tavuk",
         description: "Ailes de poulet grillées et épicées.",
         price: 1500,
-        category: "Grillades de Volaille",
+        category: "Plats de Poulet",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/19.webp"
+      },
+      {
+        id: "poultry-1",
+        name: "Suprême de poulet à la crème",
+        description: "Suprême de poulet tendre servi avec une sauce à la crème délicate.",
+        price: 1900,
+        category: "Plats de Poulet"
+      },
+      {
+        id: "poultry-2",
+        name: "Poulet sauce forestière",
+        description: "Poulet grillé accompagné de champignons et sauce forestière.",
+        price: 2000,
+        category: "Plats de Poulet"
+      },
+      {
+        id: "poultry-3",
+        name: "Poulet aux agrumes",
+        description: "Poulet savoureux mariné aux agrumes frais.",
+        price: 2100,
+        category: "Plats de Poulet"
+      },
+      {
+        id: "poultry-4",
+        name: "Poulet sauce tomate",
+        description: "Poulet tendre dans une sauce tomate maison.",
+        price: 1800,
+        category: "Plats de Poulet"
+      },
+      {
+        id: "poultry-5",
+        name: "Poulet gratiné",
+        description: "Poulet gratiné avec sauce Mornay et fromage fondant.",
+        price: 2100,
+        category: "Plats de Poulet"
+      },
+      {
+        id: "poultry-6",
+        name: "Poulet sauce hollandaise",
+        description: "Poulet raffiné garni de sauce hollandaise onctueuse.",
+        price: 2200,
+        category: "Plats de Poulet"
       }
     ]
   },
@@ -241,6 +381,53 @@ export const menuData: MenuCategory[] = [
         price: 1900,
         category: "Kebabs",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/23.webp"
+      },
+      {
+        id: "kebab-5",
+        name: "Kebab turk viande",
+        price: 1400,
+        category: "Kebabs"
+      },
+      {
+        id: "kebab-6",
+        name: "Kebab turk poulet",
+        price: 1000,
+        category: "Kebabs"
+      }
+    ]
+  },
+  {
+    name: "Poissons & Fruits de Mer",
+    dishes: [
+      {
+        id: "seafood-1",
+        name: "Filet de poisson",
+        price: 2200,
+        category: "Poissons & Fruits de Mer"
+      },
+      {
+        id: "seafood-2",
+        name: "Poisson meunière",
+        price: 2300,
+        category: "Poissons & Fruits de Mer"
+      },
+      {
+        id: "seafood-3",
+        name: "Poisson beurre blanc",
+        price: 2400,
+        category: "Poissons & Fruits de Mer"
+      },
+      {
+        id: "seafood-4",
+        name: "Poisson beurre monté",
+        price: 2400,
+        category: "Poissons & Fruits de Mer"
+      },
+      {
+        id: "seafood-5",
+        name: "Assiette fruits de mer",
+        price: 3200,
+        category: "Poissons & Fruits de Mer"
       }
     ]
   },
@@ -323,6 +510,30 @@ export const menuData: MenuCategory[] = [
         price: 600,
         category: "Plats Spéciaux",
         image: "https://storage.googleapis.com/publicasse/divan%20hane/31.webp"
+      },
+      {
+        id: "special-6",
+        name: "Plat Tochka",
+        price: 1000,
+        category: "Plats Spéciaux"
+      },
+      {
+        id: "special-7",
+        name: "Cuisse de poulet grillée",
+        price: 1200,
+        category: "Plats Spéciaux"
+      },
+      {
+        id: "special-8",
+        name: "Kefta au fromage",
+        price: 1800,
+        category: "Plats Spéciaux"
+      },
+      {
+        id: "special-9",
+        name: "Keeba en brochette",
+        price: 1000,
+        category: "Plats Spéciaux"
       }
     ]
   },

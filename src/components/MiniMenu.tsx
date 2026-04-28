@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getMenuByCategories } from '../data/menu';
@@ -45,11 +44,7 @@ const MiniMenu = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         {/* En-tête de section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, margin: "-50px" }}
+        <div
           className="text-center mb-8 sm:mb-10 lg:mb-12"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-oriental text-turkish-gold mb-3 sm:mb-6">
@@ -58,14 +53,14 @@ const MiniMenu = () => {
           <p className="text-sm sm:text-base lg:text-xl text-turkish-cream/80 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4">
             Découvrez nos spécialités en un coup d'œil
           </p>
-        </motion.div>
+        </div>
 
         {/* Carrousel */}
         <div className="relative">
           {/* Conteneur du carrousel */}
           <div className="overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
             <div 
-              className="flex transition-transform duration-700 ease-in-out"
+              className="flex"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {dishes.map((dish) => (
@@ -87,33 +82,9 @@ const MiniMenu = () => {
                       
                       {/* Nom du plat */}
                       <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 md:p-8">
-                        <motion.h3
-                          key={`${dish.id}-${currentIndex}`}
-                          initial={{ opacity: 0, y: 50, scale: 0.8, filter: "blur(4px)" }}
-                          animate={{ 
-                            opacity: [0, 0.3, 0.7, 1], 
-                            y: [50, 25, 10, 0], 
-                            scale: [0.8, 0.9, 0.95, 1],
-                            filter: ["blur(4px)", "blur(2px)", "blur(1px)", "blur(0px)"]
-                          }}
-                          exit={{ 
-                            opacity: [1, 0.7, 0.3, 0], 
-                            y: [0, -10, -25, -50], 
-                            scale: [1, 0.95, 0.9, 0.8],
-                            filter: ["blur(0px)", "blur(1px)", "blur(2px)", "blur(4px)"]
-                          }}
-                          transition={{ 
-                            duration: 1.2,
-                            ease: [0.25, 0.46, 0.45, 0.94],
-                            opacity: { duration: 1.2 },
-                            y: { duration: 1.2 },
-                            scale: { duration: 1.2 },
-                            filter: { duration: 1.2 }
-                          }}
-                          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-oriental text-turkish-gold font-bold text-shadow-lg"
-                        >
+                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-oriental text-turkish-gold font-bold text-shadow-lg">
                           {dish.name}
-                        </motion.h3>
+                        </h3>
                       </div>
                     </div>
                   ) : (
@@ -174,22 +145,16 @@ const MiniMenu = () => {
         </div>
 
         {/* Call to action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true, margin: "-50px" }}
+        <div
           className="text-center mt-8 sm:mt-10 lg:mt-12"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <button
             onClick={() => navigate('/menu')}
             className="bg-turkish-red hover:bg-turkish-gold text-white font-oriental px-4 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Voir le menu complet
-          </motion.button>
-        </motion.div>
+          </button>
+        </div>
       </div>
     </section>
   );

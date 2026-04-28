@@ -82,27 +82,6 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
              
              
              
-             {/* Horaires */}
-             <div className="bg-gradient-to-br from-turkish-blue/20 to-black/80 backdrop-blur-sm border border-turkish-gold/20 rounded-2xl p-6">
-               <div className="flex items-start space-x-4">
-                 <div className="w-12 h-12 bg-turkish-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
-                   <svg className="w-6 h-6 text-turkish-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                   </svg>
-                 </div>
-                 <div>
-                   <h3 className="text-xl font-oriental text-turkish-gold mb-4">Horaires d'ouverture</h3>
-                   <div className="space-y-2">
-                     {Object.entries(contact.hours).map(([day, hours]) => (
-                       <div key={day} className="flex justify-between">
-                         <span className="text-turkish-cream/80 font-medium">{day}</span>
-                         <span className="text-turkish-gold">{hours}</span>
-                       </div>
-                     ))}
-                   </div>
-                 </div>
-               </div>
-             </div>
           </motion.div>
           
           {/* Réseaux sociaux et CTA */}
